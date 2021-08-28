@@ -1,5 +1,13 @@
 # Container Debug Tools
 
+- nslookup
+- dig
+- whois
+- ip
+- ss
+- ping
+- curl
+
 ## Kubernetes cheat sheet
 
 nslookup
