@@ -1,6 +1,7 @@
 FROM ubuntu:20.04
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && \
+    apt-get install -y \
     iproute2 \
     dnsutils \
     whois \
@@ -8,4 +9,4 @@ RUN apt-get update && apt-get install -y \
     iputils-ping \
     && rm -rf /var/lib/apt/lists/*
 
-ENTRYPOINT ["/bin/bash"]
+CMD ["/bin/bash"]
