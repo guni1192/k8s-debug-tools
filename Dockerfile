@@ -7,6 +7,7 @@ RUN apt-get update && \
     whois \
     curl \
     iputils-ping \
+    openssh-client \
     && rm -rf /var/lib/apt/lists/*
 
 CMD ["/bin/bash"]
