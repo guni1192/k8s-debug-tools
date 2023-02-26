@@ -10,4 +10,6 @@ RUN apt-get update && \
     openssh-client \
     && rm -rf /var/lib/apt/lists/*
 
+RUN curl -sL https://get-gnmic.openconfig.net | bash
+
 CMD ["/bin/bash"]
